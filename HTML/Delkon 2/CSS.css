@@ -1,0 +1,28 @@
+body{
+    background-color: aquamarine;
+    zoom: 160%;
+}
+input{
+    margin-top: 1%;
+    border-radius: 20px;
+    background-color: beige;
+}
+:placeholder{
+    color: rgb(100, 145, 247);
+}
+div{
+    margin-top: 3%;
+    border-radius: 20px;
+}
+button{
+    border-radius: 20px;
+    margin-top: 20%;
+    background-color: rgb(21, 1, 70);
+    color: white;
+}
+h2{
+    font-size: 50%;
+    text-decoration: underline;
+    font-family: fantasy;
+    color: rgb(15, 61, 198);
+}

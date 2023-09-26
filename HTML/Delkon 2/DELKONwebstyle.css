@@ -1,0 +1,53 @@
+input {
+    zoom: 200%;
+    border-color: rgb(210, 207, 207);
+    border-radius: 10px;
+    padding-left: 3%;
+    margin-top: 1%;
+
+}
+
+h1 {
+    font-size: 500%;
+    visibility: hidden;
+}
+
+body {
+    background-image: url(img2.jpg);
+    background-color: rgba(1, 1, 82, 0.941);
+    background-blend-mode: hard-light;
+}
+
+h2 {
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 60%;
+    visibility: hidden;
+}
+
+a {
+    font-size: 200%;
+}
+
+img {
+    zoom: 10%;
+}
+
+::placeholder {
+    color: rgb(112, 112, 236);
+    font-size: 60%;
+}
+
+button {
+    zoom: 200%;
+    background: linear-gradient(350deg,rgb(14, 100, 108),rgb(69, 5, 101));
+    color: aliceblue;
+    border-radius: 20px;
+    margin-top: 2%;
+    padding-right: 8%;
+    padding-left: 9%;
+}
+

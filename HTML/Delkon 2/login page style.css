@@ -1,0 +1,40 @@
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    font-size: 60%;
+    visibility: hidden;
+}
+
+h3 {
+    font-size: 60%;
+    visibility: hidden;
+}
+
+input {
+    zoom: 200%;
+    background: transparent;
+    border-width: thin;
+    border-radius: 20px;
+}
+
+body {
+    position: relative;
+    padding-top: -10%;
+    zoom: 110%;
+    background-color: rgb(38, 2, 83);
+    padding-right: 4%;
+}
+
+button {
+    margin-right: 1%;
+    margin-top: 5%;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 20px;
+}
+
+::placeholder {
+    color: rgb(60, 31, 77);
+}

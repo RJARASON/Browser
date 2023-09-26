@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(350deg,blue,black);
+    zoom: 80%;
+}
+
+h1 {
+    font-size: 600%;
+    color: rgb(75, 157, 157);
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 300%;
+
+}
+
+h3 {
+    zoom: 200%;
+}
+
+input {
+    zoom: 100%;
+    padding-right: 40%;
+    background-color: rgb(63, 62, 62);
+    border-color: cornsilk;
+    color: rgb(255, 255, 255);
+    padding-bottom: 28%;
+    padding-right: 40%;
+    border-radius: 30px;
+    text-align: center;
+}

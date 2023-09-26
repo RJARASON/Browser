@@ -1,0 +1,18 @@
+h1 {
+    font-size: 400%;
+    margin-top: 18%;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+body{
+    background-color: rgb(34, 2, 79);
+}
+button{
+    zoom: 200%;
+    margin-top: 10%;
+    background-color: rgb(26, 26, 87);
+    border-radius: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: #ffffff;
+}
