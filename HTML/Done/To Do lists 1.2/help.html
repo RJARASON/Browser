@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Help</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    body {
+        background-color: cyan;
+        animation: transitionIn 3.35s;
+        animation-direction: alternate;
+    }
+    body {
+        animation: body2 4.1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+         
+    }
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: translate(-20px);
+        }
+
+        to {
+            opacity: 3;
+            transform: translate(0);
+        }
+    }
+
+    @keyframes body{
+        from{
+            opacity: 0;
+            transform: translate(-20deg);
+            background-color: cyan;
+        }
+        to{
+            opacity: 3;
+            transform: translate(0);
+            background-color: #0000ff;
+        }
+    }
+
+    @keyframes body2{
+        from{
+            opacity: 0;
+            transform: translate(-20deg);
+            background-color: #000be2
+        }
+        to{
+            opacity: 3;
+            transform: translate(0);
+            background-color: #009590;
+        }
+        to{
+            background-color: #00fffb;
+        }
+    }
+    .row {
+        width: 203vh;
+        height: 30%;
+        background-color: #009292;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 300%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    img {
+        margin-left: 1%;
+        margin-bottom: 2%;
+        zoom: 100%;
+    }
+
+    input {
+        margin-left: 31%;
+        font-size: 400%;
+        margin-top: 6%;
+        padding-bottom: 200px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: bisque;
+
+    }
+
+    p {
+        margin-left: 29%;
+        font-size: 300%;
+    }
+
+    #pic1 {
+        zoom: 40%;
+        margin-left: 38%;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <h1>Help Center</h1>
+        <img src="helpimg.png">
+    </div>
+    <div class="row1">
+        <p>STEP 1 : Type a word into the 'TYPE HERE BOX'</p>
+        <img src="Slide_1.png" id="pic1">
+        <p>STEP 2 : When done typing press 'ADD'</p>
+        <img src="Slide_2.png" id="pic1">
+        <p>STEP 3 : It will be Added to the lists below.</p>
+        <img src="Slide_3.png" id="pic1">
+        <p>STEP 4 : You can remove the words that you typed</p>
+        <p>by pressing the 'X' at the end of the word.</p>
+        <img src="Slide_1.png" id="pic1">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+body{
+    background-color: #153677;
+    zoom: 130%;
+}
+h1{
+    font-size: 400%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+button{
+    background-color: orange;
+    border-radius: 20px;
+}
+.print{
+    margin-right: 12%;
+}
+input{
+    border-radius: 20px;
+    margin-left: 34%;
+}
+.row{
+    margin-left: -2%;
+    margin-top: 8%;
+    zoom: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 70px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: rgb(182, 181, 181);
+    font-weight: 14px;
+    padding: 10px;
+}
+button{
+    border: 20px;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20%;
+}
+ul li{
+    list-style: none;
+    font-size: 50px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 39%;
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: #153677;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li span:hover{
+    background: #edeef0;
+    border-radius: 50px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+section{
+     margin-top: 22%;
+     color: white;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translate(-20vh);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+body{
+    animation: transitionIn 4.5s;
+}

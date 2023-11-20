@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>To Do List 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="import" id="link" href="share.html">
+</head>
+<style>
+    body {
+        background-color: #222273;
+        user-select: none;
+        animation: transitionIn 3.23s;
+    }
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: translate(-20deg);
+        }
+
+        to {
+            opacity: 3;
+            transform: translate(0);
+        }
+    }
+
+    .row {
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 6%;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 400%;
+        margin-top: 4%;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    #textbox {
+        border-radius: 20px;
+        font-size: 300%;
+        padding-left: 5%;
+    }
+
+    button {
+        font-size: 300%;
+        border: none;
+        outline: none;
+        background-color: orange;
+        cursor: pointer;
+        border-radius: 20px;
+        padding-left: 1%;
+        text-align: center;
+    }
+
+    button:hover {
+        background-color: #facf7f;
+    }
+
+    ul li {
+        list-style: none;
+        font-size: 50px;
+        padding: 12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        margin-left: 36%;
+        position: relative;
+        background-color: #facf7f;
+        width: 30vh;
+        border-radius: 30px;
+        margin-top: 3%;
+    }
+
+    ul li::before {
+        content: '';
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background-color: #153677;
+        background-size: cover;
+        background-position: center;
+        top: 11px;
+        left: 8px;
+    }
+
+    ul li span:hover {
+        background-color: #fff;
+        border-radius: 50px;
+    }
+
+    ul li.checked {
+        color: #555;
+    }
+
+    .list li {
+        display: flex;
+        list-style: none;
+        display: inline-block;
+        font-size: 300%;
+        margin-left: 8%;
+        text-decoration: underline;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .list {
+        margin-left: 69%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #datetime {
+        zoom: 200%;
+        margin-top: 4%;
+        color: crimson;
+        background-color: #facf7f;
+        border: none;
+        outline: none;
+    }
+</style>
+
+<body>
+    <div class="list">
+        <li><a href="share.html">Share</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="organize.html">Organize</a></li>
+    </div>
+    <h1>To Do Lists</h1>
+    <div class="row">
+        <input type="text" placeholder="Type Here" id="textbox">
+        <button type="button" onclick="AddTask()">Add</button>
+        <button type="button" onclick="Printdoc()">Print</button>
+    </div>
+    <ul id="listcontainers">
+        <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>  -->
+    </ul>
+    <!-- <input type="datetime-local" name="datetime" onchange="alertt()" id="datetime"> -->
+</body>
+<script>
+    const textbox = document.getElementById("textbox");
+    const listcontainers = document.getElementById("listcontainers");
+    const datetime = document.getElementById("datetime");
+    const link=document.getElementById("link");
+
+
+    function AddTask() {
+        if (textbox.value === '') {
+            alert("Invalid!")
+        }
+        else {
+            let li = document.createElement("li");
+            li.innerHTML = textbox.value;
+            listcontainers.appendChild(li);
+            let span = document.createElement("span")
+            span.innerHTML = "\u00d7"
+            li.appendChild(span);
+        }
+        textbox.value = "";
+        saveData();
+    }
+    listcontainers.addEventListener("click", function (e) {
+        if (e.target.tagName === "li") {
+            e.target.classlist.toggle("checked");
+            saveData();
+        }
+        else if (e.target.tagName === "SPAN") {
+            e.target.parentElement.remove();
+        }
+    }, false);
+
+    function saveData() {
+        localStorage.setItem("data", listcontainers.innerHTML);
+    }
+    function showTask() {
+        listcontainers.innerHTML = localStorage.getItem("data");
+    }
+    showTask();
+
+    function Printdoc() {
+        prompt("Do you want to Print?");
+        alert("Print Accepted!");
+        print(listcontainers);
+        console.info("Printing in progress....");
+        alert("Printed SuccessFully!")
+        console.log("Printed SucessFully");
+    }
+
+    setTimeout(() => {
+        alert("TO DO Lists | Ver 1.2");
+    }, 4000);
+
+</script>
+
+</html>

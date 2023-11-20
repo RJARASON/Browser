@@ -1,0 +1,121 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#home img {
+    width: 1000px;
+    height: 500px;
+    border: 10px double;
+}
+
+#home {
+    background-image: linear-gradient(to left, white, red);
+    text-align: center;
+    border: 5px double;
+}
+
+#home button {
+    width: 200px;
+    height: 125px;
+    font-size: 35px;
+    border: 10px solid;
+    border-radius: 5%;
+    background-color: darkmagenta;
+    color: turquoise;
+    font-family: cursive;
+    color: maroon;
+}
+
+#home a {
+    text-decoration: none;
+    color: white;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 55px;
+    font-family: cursive;
+}
+
+#about img {
+    border: 15px double;
+    border-radius: 5%;
+}
+
+#about p {
+    font-size: 35px;
+    text-align: justify;
+    font-family: san-serif;
+    line-height: 1.4;
+    text-indent: 30px;
+}
+
+#about {
+    background-image: linear-gradient(to top, #70d29f, #e46c6c, #81b6ee, violet, #a81fb2);
+    border: 25px double #ff6666;
+    text-align: center;
+}
+
+#album h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e46c6c;
+    font-size: 45px;
+}
+
+#album table {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    border-color: #7aa9e6;
+    background-image: linear-gradient(to top, #69fcb7, #6986fc, #a3a7e0);
+}
+
+#gallery img {
+    width: 450px;
+    height: 300px;
+    border: 5px double;
+    border-radius: 10%;
+}
+
+#gallery figcaption {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#gallery {
+    text-align: center;
+    background-image: linear-gradient(to top, #69c4fc, #fc69a4, #cbe0a3);
+    border: 15px double;
+}
+
+#contact {
+    font-size: 30px;
+    font-family: cursive;
+    border: 10px double;
+    background-image: linear-gradient(to top, #b9cbc2, #394160, #428e8f);
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#header {
+    text-align: center;
+    border: 15px double #56ae82;
+    border-radius: 5%;
+    background-image: url("bg.jpg");
+}
+
+#header nav ul li {
+    display: inline-block;
+    font-size: 25px;
+    padding: 15px
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+}
