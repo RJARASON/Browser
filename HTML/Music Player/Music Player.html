@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player HD</title>
+</head>
+<style>
+    body{
+        background: #2f2196;
+    }
+    @keyframes rowborder{
+        from{
+            opacity: 7;
+            transform: translate(-20deg);
+            border-color: #c60000;
+            border-style: solid;
+        }
+        to{
+            opacity: 7;
+            transform: translate(0);
+            border-color: #0004ff;
+            border-style: solid;
+        }
+    }
+    .row{
+        width: 90vh;
+        height: 90%;
+        background: #004d71;
+        position: absolute;
+        margin-left: 28%;
+        margin-top: -44%;
+        border-radius: 2px;
+        border: 1vh;
+        animation: rowborder 1.2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    h1{
+        text-align: center;
+        color: #fff;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #00283a;
+        padding-top: 9%;
+        padding-bottom: 9%;
+        margin-top: 1%;
+    }
+    .playercontrols1 audio{
+        zoom: 160%;
+    }
+    .playercontrols1{
+        text-align: center;
+        display: table;
+        margin-left: 21%;
+    }
+    .playercontrols1 p{
+        font-size: 30px;
+        color: #fff;
+    }
+    #Backvideo{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        zoom: 300%;
+    }
+    .bntimcon{
+        margin-top: 43%;
+    }
+    .dropdown{
+        margin-top: -5%;
+        background: #0004ff;
+        width: 30vh;
+        height: 40%;
+        border-radius: 14px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .dropdown input{
+        font-size: 40px;
+        background: #2407ff;
+        width: 25vh;
+        cursor: pointer;
+        margin-left: 6%;
+        border-radius: 15px;
+        background-color: #0a0055;
+        color: #fff;
+    }
+    .dropdown h2{
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        margin-top: -5%;
+    }
+</style>
+<body>
+    <video autoplay muted loop id="Backvideo">
+        <source src="MusicBackground2.mp4" type="video/mp4">
+    </video>
+    <div class="bntimcon">
+        <div class="dropdown">
+            <h2>Import Your Music</h2>
+            <input type="file" onclick="importmusic()" id="fileimport">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>Music Player</h1>
+            <div class="playercontrols1">
+                <p>The Fat Rat Monody</p>
+                <audio src="The Fat Rat Monody.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Imagine Dragons |Beliver</p>
+                <audio src="Imagine Dragons.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Astronaut in the Ocean</p>
+                <audio src="Astronaut in  the Ocean.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Breaking through</p>
+                <audio src="Breaking through.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Pop-Bassy-Summer</p>
+                <audio src="Pop-Bassy-Summer.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Sports-Trap-Beat</p>
+                <audio src="Sports-Trap-Beat.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Spinnin Tape - Blue City Lights</p>
+                <audio src="Spinnin Tape - Blue City Lights.m4a" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Pop-Pop-Upbeat</p>
+                <audio src="Pop-Pop-Upbeat.mp3" controls></audio>
+            </div>
+            <div class="playercontrols1">
+                <p>Unknow(Import Your Music)</p>
+                <audio src="" controls id="importedaudio"></audio>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const importedaudio=document.getElementById("importedaudio");
+    const fileimport=document.getElementById("fileimport");
+
+    function importmusic(){
+        if(fileimport==fileimport){}
+    }
+</script>
+</html>
