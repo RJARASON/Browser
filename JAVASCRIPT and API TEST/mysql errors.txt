@@ -1,0 +1,14 @@
+code: 'PROTOCOL_ENQUEUE_HANDSHAKE_TWICE',
+fatal: false
+
+code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+errno: 1251,
+sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+
+code: 'ER_NO_DB_ERROR',
+errno: 1046,
+
+code: 'MODULE_NOT_FOUND',
+
+code: 'ER_BAD_DB_ERROR',
+errno: 1049,

@@ -1,0 +1,23 @@
+| **Operation**          |  **Syntax**                                                                                                   | **Description**                                |
+|---------------------   | --------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| **Create Database**    |  `CREATE DATABASE dbname;`                                                                                   | Creates a new database                         |
+| **Drop Database**      |  `DROP DATABASE dbname;`                                                                                     | Deletes a database                             |
+| **Create Table**       |  `CREATE TABLE tablename (column1 datatype, column2 datatype, ...);`                                        | Creates a new table                            |
+| **Drop Table**         |  `DROP TABLE tablename;`                                                                                     | Deletes a table                                |
+| **Alter Table**        |  `ALTER TABLE tablename ADD column datatype;`                                                                | Adds a new column to an existing table          |
+| **Modify Column**      |  `ALTER TABLE tablename MODIFY COLUMN column datatype;`                                                      | Changes a column's datatype                    |
+| **Rename Table**       |  `ALTER TABLE old_table_name RENAME TO new_table_name;`                                                       | Renames a table                                |
+| **Insert Data**        |  `INSERT INTO tablename (column1, column2, ...) VALUES (value1, value2, ...);`                              | Inserts new data into a table                  |
+| **Update Data**        |  `UPDATE tablename SET column1 = value1, column2 = value2 WHERE condition;`                                 | Updates existing data in a table               |
+| **Delete Data**        |  `DELETE FROM tablename WHERE condition;`                                                                    | Deletes data from a table                      |
+| **Select Data**        |  `SELECT column1, column2, ... FROM tablename WHERE condition;`                                             | Retrieves data from a table                    |
+| **Join Tables**        |  `SELECT column1, column2 FROM table1 INNER JOIN table2 ON table1.id = table2.id;`                           | Joins two tables                               |
+| **Order By**           |  `SELECT column1, column2 FROM tablename ORDER BY column1 ASC|DESC;`                                          | Sorts the result set                           |
+| **Group By**           |  `SELECT column1, COUNT(*) FROM tablename GROUP BY column1;`                                                | Groups rows sharing a property                 |
+| **Having**             |  `SELECT column1, COUNT(*) FROM tablename GROUP BY column1 HAVING COUNT(*) > 1;`                           | Filters groups after aggregation               |
+| **Where**              |  `SELECT column1, column2 FROM tablename WHERE condition;`                                                   | Filters records based on a condition           |
+| **Limit**              |  `SELECT column1, column2 FROM tablename LIMIT number;`                                                      | Limits the number of records returned          |
+| **Create Index**       |  `CREATE INDEX indexname ON tablename (column1, column2, ...);`                                              | Creates an index on specified columns          |
+| **Drop Index**         |  `DROP INDEX indexname ON tablename;`                                                                         | Deletes an index                               |
+| **Add Foreign Key**    |  `ALTER TABLE tablename ADD CONSTRAINT fk_name FOREIGN KEY (column) REFERENCES other_table(column);`         | Adds a foreign key constraint                  |
+| **Remove Foreign Key** | `ALTER TABLE tablename DROP FOREIGN KEY fk_name;`                                                         | Removes a foreign key constraint               |

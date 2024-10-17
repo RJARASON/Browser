@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axois": "^0.0.1-security",
+    "chromedriver": "^127.0.3",
+    "mysql": "^2.18.1",
+    "readline": "^1.3.0",
+    "selenium-webdriver": "^4.23.0"
+  }
+}
