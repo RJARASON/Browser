@@ -1,0 +1,62 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook",
+    "content": "\\about\nCREATE DATABASE Workdata\nCREATE TABLE employees (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    first_name VARCHAR(50),\n    last_name VARCHAR(50),\n    email VARCHAR(100),\n    job_title VARCHAR(50),\n    hire_date DATE\n);\n\nUSE workdata\nCREATE TABLE employees (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    first_name VARCHAR(50),\n    last_name VARCHAR(50),\n    email VARCHAR(100),\n    job_title VARCHAR(50),\n    hire_date DATE\n);\n\nINSERT INTO employees (first_name, last_name, email, job_title, hire_date) VALUES\n('John', 'Doe', 'johndoe@example.com', 'Software Engineer', '2023-01-15'),\n('Jane', 'Smith', 'janesmith@example.com', 'Data Analyst', '2023-02-01'),\n('Robert', 'Johnson', 'robertjohnson@example.com', 'Project Manager', '2023-03-10'),\n('Emily', 'Davis', 'emilydavis@example.com', 'UI/UX Designer', '2023-04-05'),\n('Michael', 'Wilson', 'michaelwilson@example.com', 'DevOps Engineer', '2023-05-20'),\n('Jessica', 'Taylor', 'jessicataylor@example.com', 'HR Manager', '2023-06-25'),\n('Daniel', 'Anderson', 'danielanderson@example.com', 'Product Manager', '2023-07-30'),\n('Sarah', 'Thomas', 'sarahthomas@example.com', 'Marketing Specialist', '2023-08-15'),\n('David', 'Moore', 'davidmoore@example.com', 'Sales Representative', '2023-09-05'),\n('Laura', 'Brown', 'laurabrown@example.com', 'Customer Support', '2023-10-20'),\n('Kevin', 'White', 'kevinwhite@example.com', 'Business Analyst', '2023-11-10'),\n('Olivia', 'Harris', 'oliviaharris@example.com', 'Content Writer', '2023-12-05'),\n('James', 'Martin', 'jamesmartin@example.com', 'IT Support Specialist', '2024-01-15'),\n('Sophia', 'Garcia', 'sophiagarcia@example.com', 'Software Tester', '2024-02-01'),\n('Liam', 'Martinez', 'liammartinez@example.com', 'Network Engineer', '2024-03-10'),\n('Emma', 'Lopez', 'emmalopez@example.com', 'QA Engineer', '2024-04-05'),\n('Ethan', 'Gonzalez', 'ethangonzalez@example.com', 'Systems Administrator', '2024-05-20'),\n('Isabella', 'Lee', 'isabellalee@example.com', 'Database Administrator', '2024-06-25'),\n('Alexander', 'Perez', 'alexanderperez@example.com', 'Security Analyst', '2024-07-30'),\n('Mia', 'Wilson', 'miawilson@example.com', 'Technical Writer', '2024-08-15'),\n('Benjamin', 'Clark', 'benjaminclark@example.com', 'Full Stack Developer', '2024-09-05'),\n('Ava', 'Walker', 'avawalker@example.com', 'Frontend Developer', '2024-10-20'),\n('Lucas', 'Hall', 'lucashall@example.com', 'Backend Developer', '2024-11-10'),\n('Charlotte', 'Allen', 'charlotteallen@example.com', 'Graphic Designer', '2024-12-05'),\n('Noah', 'Young', 'noahyoung@example.com', 'SEO Specialist', '2025-01-15'),\n('Amelia', 'King', 'ameliaking@example.com', 'Social Media Manager', '2025-02-01'),\n('William', 'Wright', 'williamwright@example.com', 'Data Scientist', '2025-03-10'),\n('Evelyn', 'Scott', 'evelynscott@example.com', 'Content Manager', '2025-04-05'),\n('Henry', 'Green', 'henrygreen@example.com', 'Cloud Architect', '2025-05-20'),\n('Grace', 'Adams', 'graceadams@example.com', 'Business Development', '2025-06-25'),\n('Jackson', 'Baker', 'jacksonbaker@example.com', 'Technical Support', '2025-07-30'),\n('Victoria', 'Gonzalez', 'victoriagonzalez@example.com', 'Digital Marketing', '2025-08-15'),\n('Sebastian', 'Nelson', 'sebastiannelson@example.com', 'Mobile Developer', '2025-09-05'),\n('Harper', 'Carter', 'harpercarter@example.com', 'Data Engineer', '2025-10-20'),\n('Owen', 'Mitchell', 'owenmitchell@example.com', 'Network Administrator', '2025-11-10'),\n('Ella', 'Perez', 'ellaperez@example.com', 'Recruiter', '2025-12-05'),\n('Matthew', 'Roberts', 'matthewroberts@example.com', 'Operations Manager', '2026-01-15'),\n('Luna', 'Turner', 'luna@example.com', 'Business Analyst', '2026-02-01'),\n('Jack', 'Phillips', 'jackphillips@example.com', 'Software Engineer', '2026-03-10'),\n('Chloe', 'Campbell', 'chloecampbell@example.com', 'Data Analyst', '2026-04-05'),\n('Ryan', 'Parker', 'ryanparker@example.com', 'IT Support Specialist', '2026-05-20'),\n('Sophie', 'Evans', 'sophieevans@example.com', 'Product Manager', '2026-06-25'),\n('Oliver', 'Edwards', 'oliveredwards@example.com', 'UI/UX Designer', '2026-07-30'),\n('Scarlett', 'Collins', 'scarlettcollins@example.com', 'DevOps Engineer', '2026-08-15'),\n('Caleb', 'Stewart', 'calebstewart@example.com', 'Technical Writer', '2026-09-05'),\n('Mason', 'Sanchez', 'masonsanchez@example.com', 'Systems Administrator', '2026-10-20'),\n('Zoe', 'Morris', 'zoemorris@example.com', 'Database Administrator', '2026-11-10');\n\nSELECT * FROM workdata\nSELECT * FROM employees\nRENAME TABLE employees TO Workdata\nSELECT * FROM workdata\nSELECT * FROM workdata WHERE first_name\nSELECT * FROM workdata WHERE id=1-46\nSELECT * FROM workdata WHERE id=1\nSELECT * FROM workdata WHERE id=1,id=45\nSELECT * FROM workdata WHERE id=50\nSELECT * FROM workdata WHERE id=1,id=45\nSELECT * FROM workdata WHERE id=45\nSELECT * FROM workdata\nSELECT * FROM workdata WHERE first_name=\"Sarah\"\nDO GROUPING workdata\nCALL kodjodb\nCALL workdata\nCHECK TABLE workdata\nSELECT * FROM workdata WHERE first_name=\"Kodjo\"\nINSERT (id,first_name,last_name,email,job_title,hire_date)\nVALUES()\nUSE Data\nUSE workdata\nSELECT * FROM workdata\nINSERT INTO workdata(first_name,last_name,email,job_title,hire_date)\nVALUES(\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",9/4/2024)\n\nINSERT INTO workdata(first_name,last_name,email,job_title,hire_date)\nVALUES(\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",9/4/2024)\nSELECT * FROM workdata WHERE job_title=\"Programmer\"\nINSERT INTO workdata(first_name,last_name,email,job_title,hire_date)\nVALUES(\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",\"Programmer\",\"9/4/2024\")\nINSERT INTO workdata(first_name,last_name,email,job_title,hire_date)\nVALUES(\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",\"Programmer\",\"9/4/2024\")\nSELECT * FROM workdata\n\n\n\n\nINSERT INTO workdata(id,first_name,last_name,email,job_title,hire_date)\nVALUES(48,\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",\"Programmer\",\"9/4/2024\")\nINSERT INTO workdata(id,first_name,last_name,email,job_title,hire_date)\nVALUES(48,\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",\"Programmer\",9/4/2024)\nINSERT INTO workdata(id,first_name,last_name,email,job_title,hire_date)\nVALUES(48,\"Kodjo\",\"Messie\",\"kodjomessie@example.com\",\"Programmer\")",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 1,
+                    "column": 1
+                },
+                "position": {
+                    "lineNumber": 1,
+                    "column": 1
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 96,
+                "column": 1
+            },
+            "firstPositionDeltaTop": -6
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 114,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6152
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}
