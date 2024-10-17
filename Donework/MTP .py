@@ -1,0 +1,51 @@
+import time
+for i in range(0,3):
+ print("---------------------------------")
+ print("MobileMoney Transaction Program")
+ ask = int(input("How much do you have in your acount? "))
+ print("1 :Cashout")
+ print("2 :Deposit")
+ prompt = str(input("Select from the list "))
+ if (prompt == ("1")):
+    print("Cashout")
+    much = int(input("How Much? "))
+    if much > ask:
+        print("Your Balance is too Low")
+    elif much < ask:
+        number = int(input("Enter your Mobile Number: "))
+        print("Wait....")
+        time.sleep(2)
+        prompt1 = str(input("Allow Cashout 'Yes' or 'No': "))
+        if (prompt1 == ("Yes")):
+            time.sleep(2)
+            print("Cashout is Allowed!")
+            pin = int(input("Enter your Pin: "))
+            time.sleep(3)
+            print("Loading....")
+            time.sleep(2)
+            print("-------------------------------")
+            print("Cashout for", ask, "Sucessful.")
+            print("Your Balance left is",ask-much,"GHC")
+            print("Thank you.")
+            print("Your Info | Mobile Number is",number,"|Pin is",pin)
+            print("-------------------------------")
+        elif (prompt1 == ("No")):
+            print("Come Back later")
+ elif (prompt == ("2")):
+    print("Deposit")
+    much1 = int(input("How much do you want to Deposit? "))
+    print("Wait......")
+    time.sleep(2)
+    number1 = int(input("Enter your Mobile Number: "))
+    print("Loading.....")
+    time.sleep(3)
+    pin = int(input("Please Enter your Pin: "))
+    time.sleep(3)
+    print("Loading.......")
+    time.sleep(2)
+    print("-------------------------------")
+    print("Your Deposit of", much1, "was Successful.")
+    print("Your Balance left is ",ask+much1,"GHC\nThank You")
+    print("Your Info | Mobile Number is",number1,"|Pin is",pin)
+ else:
+    print("Transaction Failed❌")
